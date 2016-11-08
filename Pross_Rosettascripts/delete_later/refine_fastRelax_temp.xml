@@ -1,0 +1,43 @@
+<ROSETTASCRIPTS>
+
+	<SCOREFXNS>
+
+		<talaris_full weights = talaris2014>				
+			<Reweight scoretype = "coordinate_constraint" weight=%%cst_value%%/>
+		</talaris_full>
+
+		<talaris_pure weights = talaris2014/> 
+			
+	</SCOREFXNS>	
+	
+	<TASKOPERATIONS>
+	       	<InitializeFromCommandline name=init/>
+	       	<RestrictToRepacking name=rtr/>		
+                <PreventResiduesFromRepacking name=fix_res residues=""/> #any important residues	       	
+	</TASKOPERATIONS>
+
+	<MOVERS>		
+		<FastRelax name = fastrelax scorefxn = talaris_full task_operations = init,rtr,fix_res/> 
+		<ConstraintSetMover name= add_CA_cst cst_file = ""/>
+	</MOVERS>
+
+	<FILTERS>
+        	<ScoreType name= stability_score_full scorefxn=talaris_full score_type=total_score confidence = 0 threshold=0/>
+	       	<ScoreType name = stability_pure scorefxn = talaris_pure score_type = total_score confidence = 0 threshold = 0/>			
+		<Rmsd name= rmsd confidence = 0/>
+	</FILTERS>
+
+	<PROTOCOLS>
+		<Add mover_name=add_CA_cst/>
+        	<Add mover_name=fastrelax/>
+        	<Add filter_name=stability_score_full/>
+        	<Add filter_name=stability_pure/>
+        	<Add filter_name=rmsd/>
+        	<Add mover_name=fastrelax/>
+        	<Add filter_name=stability_score_full/>
+        	<Add filter_name=stability_pure/>
+        	<Add filter_name=rmsd/>
+	</PROTOCOLS>
+
+</ROSETTASCRIPTS>
+

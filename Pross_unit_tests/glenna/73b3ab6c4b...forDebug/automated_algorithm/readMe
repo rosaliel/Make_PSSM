@@ -1,0 +1,92 @@
+How to use the fully automated algorithm
+*****************************************
+Section 1 - make a local version of the algorithm at your directory
+-------------------------------------------------------------------
+1. add the following modules to your .bashrc file
+module load python/2.7.6
+module load ncbi-blast+/2.2.29
+module load cd-hit/4.6.1
+module load muscle/3.8.425
+module load csblast/2.2.3
+
+2. copy the directory /home/labs/fleishman/adig/thermostab/automated_algorithm/ to your user
+
+3. remove all .pyc files if exist (in the automated_algorithm dir: rm -rf *.pyc)
+
+4. make a new directory for storage of output results. When you run the algorithm results will appaer there (see also 5)
+
+5. In your copy of automtaed_algorithm/ open the file: path_variables.py 	then:
+   a. In line 3 change the path of the variable "gen_path" to the path of your copy of /automated_algorithm/ that you generated in clause 2.  
+   b. In line 6 change the paht of the variable "query_path" to the path of the results directory that you generated in clause 4.
+
+Now you have a version of the algorithm ready for use. Note that it will be running xml scripts and flags files from adig user.
+The Rosetta scripts I use for this algorithm are in /home/labs/fleishman/adig/thremostab/template_protocols
+The Rosetta flags I use for this algorithm are in /home/labs/fleishman/adig/thermostab/flags
+It will also use adig' Rosetta version. 
+If you want to use another branch of Rosetta you need to change more lines. You can find these lines by greping "adig" and "Rosetta".
+If you want to play with Rosetta scripts or flags and run the algorithm. Copy them to your user and change all the relevant paths. 
+You can find these paths by greping for "adig" and "flags_" or for "adig" and ".xml"
+
+Section 2 - prepare the query details 
+-------------------------------------
+Prepare a query input file:
+Here are all the arguments that should be in the file and their default value. In comma (#) what can be instead of default.
+Note! the file must not contain emtpy line. This will cause an error
+###########################################################################################################################################################################################################
+-pdbid=PDB_4_LETTER_CODE				#If you want to use your own pdb file you can provide a full path here instead of a 4-letter code and see also the uploaded_fasta flag
+-uploaded_fasta=					#If in pdbid you added your own pdb file, here provide the full path for a matching fasta file. The format should be the same as fasta files in rcsb.
+-input_seq=						#If the structure is of a homolog provide the query sequence to thread.   
+-chain_id=CHAIN_OF_INTEREST_ONE_LETTER_CODE		
+-small_ligands=						#A comma separated list of pdb codes of metal atoms/small molecules that you want to fix around (must exist in the input pdb)
+-large_ligands=						#A comma separated list of pdb codes (1 letter) of DNA/Protein chains that interact with the chain of interest (must exist in the input pdb)
+-res_to_fix=						#A comma separated list of residues that you want to fix for any reason
+-symm_interfaces=					#If the protein is a symmetric dimer you may design also the interface. Add the chain identifier of the complementing monomer.  
+-idealize=No						#Yes (in case you want to idealized the structure prior to refinement)
+-input_msa=No						#Full path to an MSA file in fasta format. The query sequence must be the 1st one and have the name: >THIS_IS_QUERY
+-refined_file=No					#Full path to a refined structure.
+-evalue=0.0001						#Any positive float number 
+-min_id=34						#Any positive float number between 10-100
+-max_targets=5000					#Any positive integer between 10-10000
+-coverage=0.6						#Any positive float between that is lower than 1. 
+###########################################################################################################################################################################################################
+
+Here is an example for a file:
+#####################################################################################################################################################################
+-pdbid=1NDD
+-uploaded_fasta=
+-input_seq=
+-chain_id=A
+-small_ligands=
+-large_ligands=
+-res_to_fix=2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40
+-symm_interfaces=
+-idealize=No
+-input_msa=/home/labs/fleishman/adig/thermostab/nedd8/exclude_idToUbiq_85_nogaps/nedd8_query_msa.aln
+-refined_file=No
+-min_id=34                                              
+-max_targets=5000                                       
+-coverage=0.6                                           
+#####################################################################################################################################################################
+
+Plenty other examples for input files can be found in /home/labs/fleishman/adig/thremostab/test_stab_flags
+
+Section 3 - command line 
+------------------------
+2 options: you may run it and see everything on the terminal. The terminal will be busy for about 3-5 hours. Or you can run it with nohup and print all notes to an outfile. 
+
+command line format (all notes on terminal screen): python /full_path_to_automated_algorithm/main.py @<full_path to input_file>
+command line format (free terminal and print notes to output file): nohup python /full path to automated_algorithm/main.py @<full_path to input_file> ><output_file_name> &
+
+command line example: python /home/labs/fleishman/adig/thremostab/automated_algorithm/main.py @/home/labs/fleishman/thermostab/test_stab_flags/1ndd_flags_a
+command line example: nohup python /home/labs/fleishman/adig/thermostab/automated_algorithm/main.py @/home/labs/fleishman/thermostab/stab_flags/1ndd_flags_a >/home/labs/fleishman/adig/1ndd_out & 
+
+Section 4 - view results
+------------------------
+The results folder will show up in the new dir you made at section 1 - 5b. The directory name will be PDBCODE_ or uploaded_pdb_ if you used your own pdb file. 
+If PDBCODE_ already exists the results directory will be PDBCODE__ and so on.
+In the results directory the following dirs will appear: msa/ in/ refinement/ idealize/ (optional) filterscan/ design/ 
+1. The final results are in design/designable.........../pdbs
+2. The input msa is msa/query_msa.fa
+3. The PSSM that will be used by Rosetta is in/final_pssm_for_Rosetta
+4. The sub MSA and sub PSSM files are inside in/sub_MSAs/        and inside in/sub_MSAs/sub_PSSMs
+5. The refined structure is refinement/pdbs/PDBCODE_CHAINID_refined.pdb 

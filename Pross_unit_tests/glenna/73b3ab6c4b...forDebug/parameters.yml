@@ -1,0 +1,23 @@
+---
+ADDR: 140.142.222.135
+ALLOK: Yes
+KEY: 73b3ab6c4b70cb7f414936a1088eaf1a
+NOTES: cut 4a1v BD
+TIME: Tue May 10 19:53:35 2016
+chain_id: B
+coverage: 0.6
+email: gwfoight@uw.edu
+evalue: 0.0001
+idealize: No
+input_msa: No
+input_pdb: ~
+input_seq: ~
+large_ligands: D
+max_targets: 3000
+min_id: 30
+pdbid: WORKDIR/4a1v_BD.pdb
+refined_file: No
+res_to_fix: ''
+small_ligands: ~
+symm_interfaces: ~
+uploaded_fasta: WORKDIR/4a1v_BD.fasta

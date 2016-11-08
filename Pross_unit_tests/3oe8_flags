@@ -1,0 +1,15 @@
+-pdbid=/home/labs/fleishman/adig/thermostab/PROSS_release/Pross_unit_tests/input_files/3oe8_no_lyzozyme.pdb
+-input_seq=
+-chain_id=A
+-small_ligands=ITD
+-large_ligands=
+-res_to_fix=
+-input_msa=/home/labs/fleishman/adig/thermostab/PROSS_release/Pross_unit_tests/input_files/3oe8_msa_GPCRs_chemokines.fa
+-refined_file=/home/labs/fleishman/adig/thermostab/PROSS_release/Pross_unit_tests/input_files/3oe8_refined.pdb
+-evalue=0.0001
+-min_id=30
+-max_targets=1500
+-coverage=0.6
+-idealize=No
+-symm_interfaces=
+-uploaded_fasta=/home/labs/fleishman/adig/thermostab/PROSS_release/Pross_unit_tests/input_files/3oe8.fasta

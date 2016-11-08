@@ -1,0 +1,3 @@
+Notes from Blast run
+About to run blastp with the following parameters:
+evalue = 0.0001  max_targets = 3000  min_id = 30.0  coverage = 0.6

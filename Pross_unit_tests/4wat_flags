@@ -1,0 +1,12 @@
+-pdbid=4WAT
+-input_seq=
+-uploaded_fasta=
+-chain_id=A
+-small_ligands=
+-large_ligands=
+-res_to_fix=
+-symm_interfaces=
+-idealize=No
+-input_msa=No
+-refined_file=No
+-cst_value=0.4

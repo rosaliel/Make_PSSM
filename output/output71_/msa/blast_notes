@@ -1,0 +1,16 @@
+Notes from Blast run
+About to run blastp with the following parameters:
+evalue = 0.0001  max_targets = 3000  min_id = 30.0  coverage = 0.6
+query_length is 335
+201.0
+hit failed gi|238497878|ref|XP_002380174.1| Id(%) = 69.59 coverage 171
+hit failed gi|380484227|emb|CCF40129.1| Id(%) = 57.5 coverage 200
+hit failed gi|471879535|emb|CCO34955.1| Id(%) = 57.5 coverage 200
+hit failed gi|629642970|ref|XP_007789235.1| Id(%) = 66.24 coverage 157
+hit failed gi|831343862|ref|XP_012741781.1| Id(%) = 66.87 coverage 160
+hit failed gi|639564337|gb|KDN41942.1| Id(%) = 57.0 coverage 200
+hit failed gi|751832069|emb|CEL63418.1| Id(%) = 63.46 coverage 156
+hit failed gi|299766824|gb|ADJ38193.1| Id(%) = 67.44 coverage 129
+hit failed gi|299766828|gb|ADJ38195.1| Id(%) = 64.34 coverage 129
+hit failed gi|691788714|emb|CDO75182.1| Id(%) = 52.87 coverage 174
+10 hits are excluded due to sequence identity or coverage

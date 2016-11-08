@@ -1,0 +1,29 @@
+<ROSETTASCRIPTS>
+
+	<SCOREFXNS>
+                <talaris_pure weights=talaris2014/>	
+	</SCOREFXNS>
+
+	<MOVERS>
+		<Idealize name=idealize/>
+	</MOVERS>
+
+        <FILTERS>
+                <ScoreType name=stability_pure scorefxn=talaris_pure score_type=total_score confidence=0 threshold=0/>
+                <Rmsd name=rmsd confidence=0/>
+                <Time name=timer/>
+        </FILTERS>
+
+	<APPLY_TO_POSE>
+	</APPLY_TO_POSE>
+
+	<PROTOCOLS>
+		<Add filter=timer/>
+		<Add filter=stability_pure/>
+		<Add mover=idealize/>
+		<Add filter=stability_pure/>
+		<Add filter=rmsd/>
+		<Add filter=timer/>
+	</PROTOCOLS>
+
+</ROSETTASCRIPTS>

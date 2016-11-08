@@ -1,0 +1,43 @@
+<ROSETTASCRIPTS>
+
+	<SCOREFXNS>
+            
+		<talaris_full weights=talaris2014>				
+			<Reweight scoretype="coordinate_constraint" weight=%%cst_value%%/>
+			<Reweight scoretype="res_type_constraint" weight=0.4/>
+		</talaris_full>
+
+      </SCOREFXNS>
+        
+        <TASKOPERATIONS>
+                <InitializeFromCommandline name=init/>             
+		<DesignAround name=des_around design_shell=0.1 resnums="%%current_res%%" repack_shell=8.0/> %allows to divide the script for many jobs to do in parallel. 
+		<RestrictResiduesToRepacking name=termini residues=""/> #avoid design at N terminus. The C terminus is helical so I allow design there. 
+		<RestrictResiduesToRepacking name=near_gaps residues=""/>
+                <PreventResiduesFromRepacking name=fix_res residues=""/>
+	 	<SeqprofConsensus name=pssm_cutoff filename="/home/labs/fleishman/adig/ThermoStab_benchmark/" min_aa_probability=0 probability_larger_than_current=0 convert_scores_to_probabilities=0 keep_native=1/>
+        </TASKOPERATIONS>
+
+        <MOVERS>
+                <ConstraintSetMover name=add_CA_cst cst_file="/home/labs/fleishman/adig/ThermoStab_benchmark/"/>
+                <FavorSequenceProfile name=FSP scaling="none" weight=1 pssm="/home/labs/fleishman/adig/ThermoStab_benchmark/" scorefxns=talaris_full/>
+                <MinMover name=min_all scorefxn=talaris_full chi=1 bb=1 jump=0/>
+        </MOVERS>
+
+        <FILTERS>
+              	<ScoreType name=stability_score_full scorefxn=talaris_full score_type=total_score threshold=0.0/>
+                <Delta name=delta_score_full filter=stability_score_full upper=1 lower=0 range=/>
+		#upper and lower are booleans. Delta filters out all the mutations that are worse or better by less than -0.55R.E.U
+              	<Time name=timer/>
+		<FilterScan name=filter_scan dump_pdb=1 scorefxn=talaris_full relax_mover=min_all task_operations=init,des_around,fix_res,near_gaps,termini,pssm_cutoff delta_filters=delta_score_full delta=true resfile_name="stab_aa_res%%current_res%%.resfile" report_all=1 score_log_file="res%%current_res%%_score_full.log"/> 
+        </FILTERS>
+
+        <PROTOCOLS>       
+        	<Add filter=timer/> 
+		<Add mover_name=add_CA_cst/>
+                <Add mover=FSP/>        	   
+        	<Add filter=filter_scan/>
+        	<Add filter=timer/> 
+	</PROTOCOLS>
+        
+</ROSETTASCRIPTS>

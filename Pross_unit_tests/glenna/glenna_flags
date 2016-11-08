@@ -1,0 +1,15 @@
+-pdbid=/home/labs/fleishman/adig/thermostab/test_stab_flags/glenna/4a1v_B.pdb
+-input_seq=
+-chain_id=B
+-small_ligands=
+-large_ligands=
+-res_to_fix=
+-input_msa=No
+-refined_file=No
+-evalue=0.0001
+-min_id=30
+-max_targets=20000
+-coverage=0.6
+-idealize=No
+-symm_interfaces=
+-uploaded_fasta=/home/labs/fleishman/adig/thermostab/test_stab_flags/glenna/4a1v_B.fasta

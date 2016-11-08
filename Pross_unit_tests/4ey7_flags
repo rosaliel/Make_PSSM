@@ -1,0 +1,12 @@
+-pdbid=/home/labs/fleishman/adig/thermostab/PROSS_release/Pross_unit_tests/input_files/4ey7.pdb
+-uploaded_fasta=/home/labs/fleishman/adig/thermostab/PROSS_release/Pross_unit_tests/input_files/4ey7.fasta
+-input_seq=
+-chain_id=A
+-small_ligands=E20,E11
+-large_ligands=B,C
+-res_to_fix=
+-symm_interfaces=
+-idealize=No
+-input_msa=/home/labs/fleishman/adig/thermostab/PROSS_release/Pross_unit_tests/input_files/4ey7_msa.fa
+-refined_file=No
+-cst_value=0.4

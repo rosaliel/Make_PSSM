@@ -1,0 +1,142 @@
+CLUSTAL
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                -----TIQNDIPDLYSVFKD----Y-F-P-IGVAV------DP-S-R-L-----------   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         ------IQEDIPDLYSVFLD----C-F-P-IGVAV------EP-G-R-L-----------   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         ------IQENIPDLHSVFSD----Y-F-P-IGVAV------EP-N-R-L-----------   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         -----TIQNDIPDLYSVFKD------YFP-IGVAV------DP-S-R-L----------N   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         -----TIQNDIPDLSSVFKD----Y-F-P-IGVAV------DP-S-R-L-----------   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                -----TIQNDIPDLYSVLKD----Y-F-P-IGVAV------DP-S-R-L-----------   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                ---------N----DADPH-AQ-L-TA--KHFN-MLVAENAMKPESLQ-P-----TEG--   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         ---------V----NTDPH-SQ-L-TA--KHFN-MLVAENAMKPVSLQ-P-----QEG--   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         ---------A----DSDPH-SQ-L-VA--KHFN-MLVAENAMKPISLE-P-----TEG--   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         DADP------------H---AQ-L-TA--KHFN-MLVAENAMKPESLQ-P-----TEG--   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         ---------N----DTDPH-AQ-L-TA--KHFN-MLVAENAMKPESLQ-P-----TEG--   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                ---------N----DAEAH-AQ-L-TA--RHFN-MLAAANAMKPESLQ-P-----TEG--   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                -------NFT--------------F-D--N--ADKIVDYAIAH-----NMK------MRG   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         -------IFT--------------F-S--N--ADKIVDFAIAH-----NMK------MRG   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         -------NFT--------------F-N--N--ADAIVDFAIAH-----NMK------MRG   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         -------NFT--------------F-D--N--ADKIVDYAIAH-----NMK------MRG   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         -------NFT--------------F-D--N--ADRIVDYAIAH-----NMK------MRG   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                -------NFA--------------F-D--N--ADKIVDYAIAH-----NMK------MRG   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                HTLLWH------N-Q-------------V---------------PDWF----F-------   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         HTLLWH------N-Q-------------V---------------PDWF----F-------   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         HTLLWH------N-Q-------------V---------------PDWF----F-------   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         HTLLWH------N-Q-------------V---------------PDWF----F-------   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         HTLLWH------N-Q-------------V---------------PDWF----F-------   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                HTLLWH------N-Q-------------V---------------PDWV----F-------   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                ----Q-----D--------PS-----D--PSK---------P-A----------------   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         ----Q-----D--------PS-----D--PTK---------T-A----------------   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         ----Q-----D--------PS-----D--PSK---------P-A----------------   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         ----Q-----D--------PS-----D--PSK---------S-A----------------   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         ----Q-----D--------PS-----D--PTK---------P-A----------------   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                ----Q-----E--------PS-----D--PSK---------P-S----------------   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                --------------------------------S------------------------R--   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         --------------------------------S------------------------R--   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         --------------------------------S------------------------R--   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         --------------------------------S------------------------R--   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         --------------------------------S------------------------R--   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                --------------------------------S------------------------R--   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                -------------------------------------DLLLQ-----RLRTHIT---TVL   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         -------------------------------------ELLLE-----RLKTHIF---TVL   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         -------------------------------------DLLLQ-----RLQTYIT---TVL   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         -------------------------------------DLLLQ-----RLKTHIT---TVL   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         -------------------------------------DLLLQ-----RLKTHIT---TVL   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                -------------------------------------DLLRQ-----RLSTHIT---AVL   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                -------D---HF-----K---TKYG-SQNP-II-------G-----WDVVNEVL--DD-   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         -------G---HF-----K---EKYG-SNNP-II-------A-----WDVVNEVL--DD-   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         -------N---HF-----K---TKYS-SNNP-IV-------A-----WDVVNEVL--DD-   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         -------D---HF-----K---TKYG-SQNP-II-------G-----WDVVNEVL--DD-   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         -------D---HF-----K---TKYG-AQNP-II-------G-----WDVVNEVL--DD-   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                -------E---HI-----Q---TKCG-SLDP-IG-------G-----WDVVNEVL--DE-   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                --------------N-------------G-------------------NLR---------   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         --------------N-------------G-------------------QLR---------   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         --------------N-------------G-------------------NLR---------   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         --------------N-------------G-------------------NLR---------   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         --------------N-------------G-------------------SLR---------   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                --------------S-------------G-------------------NLR---------   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                ---N----------S---------K-------W-------------LQII--------G-   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         ---N----------S---------K-------W-------------LQII--------G-   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         ---N----------S---------K-------W-------------LQII--------G-   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         ---N----------S---------K-------W-------------LQII--------G-   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         ---N----------S---------K-------W-------------LQII--------G-   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                ---N----------P---------T-------W-------------LQII--------G-   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                -------P--D----YIEKAFEYAH---E-----A------DP-------------S---   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         -------P--D----YIEKAFEYAH---E-----A------DP-------------N---   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         -------P--D----YIEKAFQYAH---E-----A------DP-------------N---   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         -------P--D----YIEKAFEYAH---E-----A------DP-------------S---   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         -------P--D----YIEKAFEYAH---E-----A------DP-------------S---   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                -------P--D----YIDKASEYAH---E-----G------DP-------------S---   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                ---MKLFINDYN---IE--------N----N------G----V--------K----T---   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         ---VKLFINDYN---IE--------N----N------G----A--------K----T---   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         ---VKLFINDYN---IE--------N----N------G----A--------K----T---   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         ---MKLFINDYN---IE--------N----N------G----V--------K----T---   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         ---MKLFINDYN---IE--------N----N------G----V--------K----T---   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                ---MTSFITYHN---IE-------------N------G----V--------K----T---   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                -QAMY-DLVKKLK----N-E----------------GV-------PINGI--GMQMH-IS   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         -QAMY-ELVKSLK----E-K----------------GV-------PIDGI--GMQMH-IN   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         -QAMY-NLVKKLK----D-E----------------GI-------PVDGI--GMQMH-IN   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         -QAMY-DLVKKLK----S-E----------------GV-------PIDGI--GMQMH-IN   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         -QAMY-DLVKKLK----S-E----------------GV-------PISGI--GMQMH-IN   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                -QAMY-DLVKKLK----N-E----------------GV-------PINGI--GMQMH-IS   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                I-----------N------------S-N--I--D------NI----KA--SIEKLAS-L-   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         I-----------N------------S-N--V--E------SI----KA--SIEKFKS-L-   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         I-----------N------------S-N--V--D------NI----KA--SIEKFAS-L-   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         I-----------N------------S-N--I--D------NI----KA--SIEKLAS-L-   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         I-----------N------------S-N--I--D------NI----KA--SIEKLAS-L-   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                I-----------N------------S-N--I--D------NI----KA--SIEKLAS-L-   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                -----GV-EIQVTELDM-N-----------------------------------------   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         -----GV-EIHITELDM-N-----------------------------------------   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         -----GV-QIQITELDM-N-----------------------------------------   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         -----GV-EIQVTELDM-N-----------------------------------------   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         -----GV-EIQVTELDM-N-----------------------------------------   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                -----GV-EIQVTELDM-N-----------------------------------------   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                ------------------MNGDVSNDALL-----------KQARLYKQLFDLFKA----E   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         ------------------MLGDVSQDALL-----------KQARLYKQIFDLLKQ----E   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         ------------------MQGNVSQDALL-----------RQARLYKQLFDVLKQ----E   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         ------------------MNGNISNEALL-----------KQARLYKQLFDLFKA----E   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         ------------------MNGNVSNEALL-----------KQARLYKQLFDLFKA----E   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                ------------------MNGDVSNDALL-----------KQARLYKQLFDLFKA----E   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                ---K---Q--------Y-------------ITAVVFWGVSDDVS-----W----L-----   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         ---K---D--------H-------------ITAVVFWGVSDDVT-----W----L-----   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         ---K---Q--------Y-------------ITAVVFWGVSDDVT-----W----L---S-   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         ---K---Q--------Y-------------ITAVVFWGVSDDVT-----W----L-----   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         ---K---Q--------Y-------------ITAVVFWGVSDDVT-----W----L-----   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                ---K---H--------Y-------------ITDVVFRGVSDDVS-----W----L-----   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                --------------------SK--P---N-------------------------------   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         ------------------------K---Q----P--------------------------   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         ------------------------Q---P-------------------------------   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         --------------------SK--P---N-------------------------------   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         --------------------SK--P---N-------------------------------   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                --------------------SK--P---N-------------------------------   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                ------------A-----------P-----LLFD-SKLQAKPAYWAIV-DLGKAIPDIQS   
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         ------------N-------A---P-----LLFD-TKLQAKPAYWAIV-DPSKVAADRQ-   
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         ------------N-------A---P-----LLFD-SNLQAKPAYWAIV-DPNKAAVNRQA   
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         ------------A-----------P-----LLFD-SKLQAKPAFWAVV-DPSKAIPDIQS   
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         ------------A-----------P-----LLFD-SKLQAKPAYWAIA-DPSKAIPDIQS   
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                ------------A-----------P-----LLFD-SKLQAKPAYWAIV-DPGKAIPDIQS   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                A----                                                          
+>gi|502759371|ref|WP_012994355.1|| Identities = 82.58%         -----                                                          
+>gi|916979023|ref|WP_051585735.1|| Identities = 84.18%         A----                                                          
+>gi|549463|sp|P36917.1|XYNA_THESA| Identities = 96.13%         A----                                                          
+>gi|586269|sp|P38535.1|XYNX_CLOTM| Identities = 95.24%         A----                                                          
+>gi|1222527|gb|AAC43719.1|| Identities = 88.99%                A----                                                          
+

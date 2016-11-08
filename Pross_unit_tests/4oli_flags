@@ -1,0 +1,11 @@
+-pdbid=4OLI
+-input_seq=
+-uploaded_fasta=
+-chain_id=A
+-small_ligands=2TT
+-large_ligands=
+-res_to_fix=903,904,905,906,907,908,909,910,911,912,928,929,931,932,944,947,974,975,976,977,978,1041,907,1021,1022,1024,1025,1028,1040,1041,1042,1043,1044,1045,1063,1064,1068,1083,1086,604,1054
+-symm_interfaces=
+-idealize=No
+-input_msa=/home/labs/fleishman/adig/thermostab/PROSS_release/Pross_unit_tests/input_files/4oli_msa.fa
+-refined_file=No

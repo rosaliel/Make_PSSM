@@ -1,0 +1,12 @@
+-pdbid=/home/labs/fleishman/rosaliel/make_pssm/trials/71.pdb
+-input_seq=
+-chain_id=A
+-small_ligands=XYP
+-large_ligands=
+-res_to_fix=
+-symm_interfaces=
+-idealize=No
+-input_msa=No
+-refined_file=No
+-uploaded_fasta=/home/labs/fleishman/rosaliel/make_pssm/trials/71.fa
+-cst_value=0.4

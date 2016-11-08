@@ -1,0 +1,47 @@
+<ROSETTASCRIPTS>
+
+	<SCOREFXNS>
+		<talaris_full weights=talaris2014>				
+			<Reweight scoretype="coordinate_constraint" weight=%%cst_value%%/>
+			<Reweight scoretype="res_type_constraint" weight=0.4/>
+		</talaris_full>
+
+		<soft_rep_full weights=soft_rep>
+		    <Reweight scoretype="coordinate_constraint" weight=%%cst_value%%/>
+		    <Reweight scoretype="res_type_constraint" weight=0.4/>
+		</soft_rep_full>
+	 	
+		<tal_no_pssm weights=talaris2014> #used with the filter stability_without_pssm 
+			<Reweight scoretype="coordinate_constraint" weight=%%cst_value%%/>
+		</tal_no_pssm>
+
+	 	<talaris_pure weights=talaris2014/> 			
+	</SCOREFXNS>	
+	
+	<TASKOPERATIONS>
+        	<InitializeFromCommandline name=init/>       	      			
+	</TASKOPERATIONS>
+
+	<MOVERS>
+       	    	ConstraintSetMover name=add_CA_cst cst_file="/home/labs/fleishman/adig/ThermoStab_benchmark/"/>	
+        	FavorSequenceProfile name=FSP scaling="none" weight=1 pssm="/home/labs/fleishman/adig/ThermoStab_benchmark/" scorefxns=talaris_full/>
+	</MOVERS>
+
+	<FILTERS>
+        	<ScoreType name=stability_score_full scorefxn=talaris_full score_type=total_score confidence=0 threshold=0/>
+        	<ScoreType name=stability_without_pssm scorefxn=tal_no_pssm score_type=total_score confidence=0 threshold=0/>
+	       	<ScoreType name=stability_pure scorefxn=talaris_pure score_type=total_score confidence=0 threshold=0/>			
+		<Rmsd name=rmsd confidence=0/>
+	</FILTERS>
+
+	<PROTOCOLS>
+	#1st round is soft design and min, 2nd round is soft design hard min, 3rd and 4th round are hard design and min. In the 4th round also include RT min.
+        	Add mover_name=add_CA_cst/>
+       		Add mover_name=FSP/>		
+       		Add filter_name=stability_score_full/>
+        	Add filter_name=stability_without_pssm/>
+        	<Add filter_name=stability_pure/>
+        	<Add filter_name=rmsd/>
+	</PROTOCOLS>
+
+</ROSETTASCRIPTS>

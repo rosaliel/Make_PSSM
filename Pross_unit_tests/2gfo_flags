@@ -1,0 +1,16 @@
+-pdbid=2GFO
+-input_seq=
+-chain_id=A
+-small_ligands=
+-large_ligands=
+-res_to_fix=
+-input_msa=No
+-refined_file=No
+-evalue=0.0001
+-min_id=30
+-max_targets=3000
+-coverage=0.6
+-idealize=No
+-symm_interfaces=
+-uploaded_fasta=
+-cst_value=0.4

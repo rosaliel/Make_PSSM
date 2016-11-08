@@ -1,0 +1,50 @@
+CLUSTAL
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                ----------TIQNNIPPLADVFKNYFYFGVATD-KNRL-----------T-TGK-----   
+>gi|544191945|pdb|4HU8|A| Identities = 57.95%                  ---------------LPPLKDHFKDYFLIGNIFN-NRDV---------SGS--MM-----   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                ------NAA-------I-I--QA-D----FGQVTP-----------------EN------   
+>gi|544191945|pdb|4HU8|A| Identities = 57.95%                  ------DND-----W---L--AH-H----YAILTP-----------------EN------   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                SMKWEATEP-S-----QG-----------NFNFAG---------A-DYVVNWAQQNG-KL   
+>gi|544191945|pdb|4HU8|A| Identities = 57.95%                  HMKPSNLTN-N-----RN-----ETTGEITYTFST---------A-DRMVNAAIAEG-LK   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                ------VQGHTL-----------------VWHSQMPSWV------S----S---------   
+>gi|544191945|pdb|4HU8|A| Identities = 57.95%                  ------IHGHTL-----------------LWHQQIPPWQ------R----S---------   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                ------------------------ITD--------KN---------TLT-NVMKNHITTL   
+>gi|544191945|pdb|4HU8|A| Identities = 57.95%                  ----------------------MESAA--------KD---------AAL-SVMKKYITEV   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                MTR--Y-KG--K------V---K-----------------A-----W--------DVV--   
+>gi|544191945|pdb|4HU8|A| Identities = 57.95%                  MTH--Y-KG--K------I---Y-----------------S-----W--------DVL--   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                -------NE-A--------F-------N---E---------------D-------G----   
+>gi|544191945|pdb|4HU8|A| Identities = 57.95%                  -------NE-I--------F-------P---D-----------------------G----   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                --------S--------LR------Q---TV-FL--NVI-G---------E-D-------   
+>gi|544191945|pdb|4HU8|A| Identities = 57.95%                  --------RGDNWTTAMRP------E---NP-WF--KSI-G---------S-D-------   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                -------YIPIAFQTA-RA-AD-PN-----AEL---------YM--NDYN----L---E-   
+>gi|544191945|pdb|4HU8|A| Identities = 57.95%                  -------FVYEAYLAA-RQ-AD-PN-----AIL---------YY--NDYN----M---D-   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                ----Q-AGQ----AAMVA---AMVR----DVN-AKYKQAYPKETRLLIEGV---------   
+>gi|544191945|pdb|4HU8|A| Identities = 57.95%                  ----Q-AGK----AALIA---AMVR----DVN-AKYKQAYPRETRLLIEGI---------   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                -----------------G-----------IQAHHNM--------D---------------   
+>gi|544191945|pdb|4HU8|A| Identities = 57.95%                  -----------------G-----------MQSHHNM--------D---------------   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                VP---------AN------NI--RN-----TINRFR-EL----G--V---RISISELDI-   
+>gi|544191945|pdb|4HU8|A| Identities = 57.95%                  VP---------AS------NI--RN-----TINRYR-EL----G--V---KISVSELDI-   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                ---------------------------------LAMGWSAFRGSTGQGSDKDDMSLATNR   
+>gi|544191945|pdb|4HU8|A| Identities = 57.95%                  ---------------------------------LCMGWSAFRGSTGQGADKDDMTIATNR   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                DIL-EQAYRFNE----------------YMKLYIEN-SDI--VEQVSIWGISDR----YS   
+>gi|544191945|pdb|4HU8|A| Identities = 57.95%                  NIL-DQAYKFNE----------------YMKLYLEN-SDI--IERVSMWGVSDR----YS   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                W---Q----S----G--------------G------------------------------   
+>gi|544191945|pdb|4HU8|A| Identities = 57.95%                  W---R----S----G--------------G------------------------------   
+
+>Input_pdb_SEQRES|THIS_IS_QUERY                                -----LPLLFD-ADNKAKP-AYWAIV                                     
+>gi|544191945|pdb|4HU8|A| Identities = 57.95%                  -----LPLLFD-ADNKAKP-AYYSFV                                     
+

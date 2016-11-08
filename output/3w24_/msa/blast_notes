@@ -1,0 +1,7 @@
+Notes from Blast run
+About to run blastp with the following parameters:
+evalue = 0.0001  max_targets = 3000  min_id = 30.0  coverage = 0.6
+query_length is 336
+201.6
+hit failed gi|928450106|gb|KPC99750.1| Id(%) = 49.73 coverage 191
+1 hits are excluded due to sequence identity or coverage

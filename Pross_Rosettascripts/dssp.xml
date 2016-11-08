@@ -1,0 +1,26 @@
+<ROSETTASCRIPTS>
+
+	<SCOREFXNS>
+	 	<talaris_pure weights=talaris2014/> 
+	</SCOREFXNS>	
+	
+	<TASKOPERATIONS>
+        	<InitializeFromCommandline name=init/>
+	</TASKOPERATIONS>
+
+	<MOVERS>
+		<Dssp name=dssp reduced_IG_as_L=0/>
+	</MOVERS>
+
+	<FILTERS>
+	       	<ScoreType name=stability_pure scorefxn=talaris_pure score_type=total_score confidence=0 threshold=0/>	
+		<Rmsd name=rmsd confidence = 0/>
+	</FILTERS>
+
+	<PROTOCOLS>
+        	<Add mover_name=dssp/>
+        	<Add filter_name=stability_pure/>
+        	<Add filter_name=rmsd/>
+	</PROTOCOLS>
+
+</ROSETTASCRIPTS>

@@ -1,0 +1,26 @@
+11/07/16
+In this folder there are several flag files for local PROSS unit test.
+Run tests in the following order:
+1. 1ndd_flags_a  		#tests the algorithm in a fast test since 1ndd is small and 40 residues are fixed
+2. 1ndd_flags_b	 		#similiar to a but no residue fix. Checks that PreventFromRepack is compatible with no input
+3. 1ndd_flags_c  		#similar to a/b but with 1NDD.pdb + 1NDD.fasta provided as input by a user
+4. 1ndd_flags_d  		#similar to a but with no input_msa so checks blast.py class
+5. 1hzy_flags  	         	#heavier calculation and the first residue is not 1 so checks correct fixation. 
+6. 1hzy_flags_symm		#similar to number 5 but with symmetry (dimer - chain b)
+7. 4ey7_flags			#multiple rotamers heavy calc (checks for memory issues). missing density (checks restrictorepack)
+8. 4oli_flags			#heavy calc. Residues numbers above 1000
+9. 2gfo_flags			#Has special amino acids (MSE) 
+10. ravit_debug/input_3oe8      #GPCR with input MSA and uploaded pdb file
+
+Command lines for unit tests
+----------------------------
+nohup python PROSS_release/Pross_scripts/main.py @PROSS_release/Pross_unit_tests/1ndd_flags_a >out_1ndd_a &
+nohup python PROSS_release/Pross_scripts/main.py @PROSS_release/Pross_unit_tests/1ndd_flags_b >out_1ndd_b &
+nohup python PROSS_release/Pross_scripts/main.py @PROSS_release/Pross_unit_tests/1ndd_flags_c >out_1ndd_c &
+nohup python PROSS_release/Pross_scripts/main.py @PROSS_release/Pross_unit_tests/1ndd_flags_d >out_1ndd_d &
+nohup python PROSS_release/Pross_scripts/main.py @PROSS_release/Pross_unit_tests/1hzy_flags >out_1hzy &
+nohup python PROSS_release/Pross_scripts/main.py @PROSS_release/Pross_unit_tests/1hzy_flags_symm >out_1hzy_symm &
+nohup python PROSS_release/Pross_scripts/main.py @PROSS_release/Pross_unit_tests/4ey7_flags >out_4ey7 &
+nohup python PROSS_release/Pross_scripts/main.py @PROSS_release/Pross_unit_tests/4oli_flags >out_4oli &
+nohup python PROSS_release/Pross_scripts/main.py @PROSS_release/Pross_unit_tests/2gfo_flags >out_2gfo &
+nohup python PROSS_release/Pross_scripts/main.py @PROSS_release/Pross_unit_tests/3oe8_flags >out_3oe8 &

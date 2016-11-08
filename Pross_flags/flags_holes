@@ -1,0 +1,9 @@
+#  only for RosettaHoles2 App...
+-database /home/labs/fleishman/adig/thermostab/PROSS_release/Pross_Rosettadatabase/
+-ignore_unrecognized_res
+-renumber_pdb true
+-holes:dalphaball /home/labs/fleishman/barand/Dalphaball/DAlphaBall_new/src/DAlphaBall.icc
+-out:file:silent_struct_type binary
+#-mute all
+#-unmute RosettaHoles  # unmute only to the app comments...
+-holes:make_voids #Output pdb will show cavities 

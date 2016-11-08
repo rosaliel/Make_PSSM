@@ -1,0 +1,16 @@
+-uploaded_fasta=
+-input_seq=
+-coverage=0.6
+-evalue=0.0001
+-idealize=No
+-chain_id=A
+-symm_interfaces=
+-small_ligands=XYP
+-cst_value=0.4
+-refined_file=No
+-large_ligands=
+-pdbid=/home/labs/fleishman/rosaliel/make_pssm/trials/3w24.pdb
+-input_msa=No
+-min_id=30.0
+-res_to_fix=
+-max_targets=3000

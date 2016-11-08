@@ -1,0 +1,12 @@
+-pdbid=1HZY
+-input_seq=
+-chain_id=A
+-small_ligands=
+-large_ligands=
+-res_to_fix=55,56,57,58,59,60,61,100,101,102,106,131,132,133,136,137,139,140,169,171,172,173,200,201,202,230,233,253,254,257,267,270,271,272,300,301,302,303,305,306,307,308,309,310,313,317
+-symm_interfaces=C2, B
+-idealize=No
+-input_msa=/home/labs/fleishman/adig/thermostab/PROSS_release/Pross_unit_tests/input_files/1hzy_msa_min28.fa
+-refined_file=No
+-uploaded_fasta=
+-cst_value=0.1

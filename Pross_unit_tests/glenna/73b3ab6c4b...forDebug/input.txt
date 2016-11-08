@@ -1,0 +1,15 @@
+-pdbid=/home/labs/fleishman/WebServer/PROSS/dat/73b3ab6c4b70cb7f414936a1088eaf1a/4a1v_BD.pdb
+-input_seq=
+-chain_id=B
+-small_ligands=
+-large_ligands=D
+-res_to_fix=
+-input_msa=No
+-refined_file=No
+-evalue=0.0001
+-min_id=30
+-max_targets=3000
+-coverage=0.6
+-idealize=No
+-symm_interfaces=
+-uploaded_fasta=/home/labs/fleishman/WebServer/PROSS/dat/73b3ab6c4b70cb7f414936a1088eaf1a/4a1v_BD.fasta
