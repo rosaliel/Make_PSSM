@@ -1,0 +1,7 @@
+#!/bin/bash
+. /usr/share/lsf/conf/profile.lsf
+cd /home/labs/fleishman/rosaliel/make_pssm
+python Pross_scripts/main.py @trials/flags
+#PYTHONPATH=/apps/RH6U4/python/2.7.6/lib/python2.7/site-packages  python Pross_scripts/main.py @trials/flags
+#PYTHONPATH=/apps/RH6U4/python/2.7.6/lib/python2.7/site-packages python lala.py
+#python lala.py

@@ -1,0 +1,1 @@
+bsub -u /dev/null -R rusage[mem=1024]  -q fleishman -o out/1ta3B.out -e err/1ta3B.err  job/1ta3B.job
