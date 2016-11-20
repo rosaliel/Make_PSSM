@@ -1,0 +1,16 @@
+-pdbid=/home/labs/fleishman/rosaliel/make_pssm/trials/1ta3B.pdb
+-uploaded_fasta=
+-input_seq=
+-chain_id=B
+-small_ligands=XYP
+-large_ligands=
+-res_to_fix=
+-symm_interfaces=
+-idealize=No
+-input_msa=No
+-refined_file=No
+-evalue=0.0001
+-min_id=30
+-max_targets=3000
+-coverage=0.6
+-cst_value=0.4

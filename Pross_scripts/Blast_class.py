@@ -52,7 +52,8 @@ class Blast:
                         '  min_id = ' + str(self.min_id) + \
                         '  coverage = ' + str(self.min_coverage) + '\n')
             notes.close()
-
+        print 'CR: blast command'
+        print 'blastp -query ' + self.infile_full + ' -db /shareDB/nr/latest/nr ' + ' -evalue ' + self.evalue + ' -max_target_seqs ' + self.max_targets  + ' -outfmt 5' + ' -out ' + self.outfile
         os.system('blastp -query ' + self.infile_full \
                   + ' -db /shareDB/nr/latest/nr ' \
                   + ' -evalue ' + self.evalue \
@@ -143,7 +144,7 @@ class Blast:
         return self.query_seq
 
     def output_in_fasta(self):
-        blast_data = self.run_blast()
+        blast_data = self.run_blast() # CR: it is the file blast_infile_out_xml
         hit_blocks = self.parse_blast_output(blast_data)
         parsed_hits = self.parse_xml_hit(hit_blocks)
         query_seq = self.extract_query_seq()
@@ -180,7 +181,7 @@ class Blast:
 
         return self.fasta_outfile
 
-    def run_cd_hit(self, infile, clust_threshold):
+    def run_cd_hit(self, infile, clust_threshold): # CR: infile = blast_infile_out_filt_fa
         print 'About to run cd-hit on initial blast results'
         if clust_threshold is 'default':
             clust_threshold = str(0.97)
@@ -195,10 +196,10 @@ class Blast:
         if 'Input_pdb_SEQRES' in open(self.cd_hit_outfile + '_temp').read():
             os.system('mv ' + self.cd_hit_outfile + '_temp ' + self.cd_hit_outfile)
 
-        else:
+        else: # CR: if the query is not representing a cluster
             with open(self.cd_hit_outfile + '_temp', "r") as file_r:
                 lines = file_r.read().split('\n')
-
+            # CR: retrieving self.query_seq
             self.extract_query_seq()   # If implementing directly this function this line is needed.
 
             file_w = open(self.cd_hit_outfile, 'w')
@@ -214,6 +215,8 @@ class Blast:
     def run_muscle_for_MSA_output(self, infile):
         print 'About to run muscle to get MSA'
         self.muscle_outfile = self.infile_path + 'query_msa.fa'     # In this format it's easy to move the query sequence to the top
+        print 'CR: muscle command'
+        print 'muscle -in ' + infile + ' -out ' + self.muscle_outfile + '_temp'
         os.system('muscle -in ' + infile + ' -out ' + self.muscle_outfile + '_temp')
 
         self.muscle_clustal = self.infile_path + 'query_msa.aln' # This format is good for user inspection

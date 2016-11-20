@@ -1,10 +1,8 @@
-import urllib,os,re, subprocess, sys
-import time
-
-from Thermostab_query import *
 from Choose_best_structure_class import *
-from sleep import *
+
 from path_variables import *
+from sleep import *
+
 
 class Idealize:
 

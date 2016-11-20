@@ -1,13 +1,13 @@
 from Bio.SubsMat import MatrixInfo as matlist
-from prody import *
-from pylab import *
+# from prody import *
+# from pylab import *
 import urllib,os,re, subprocess, sys
 from os.path import basename
 from Align2seq_class import *
 from Blast_class import *
 from path_variables import *
-
-ion()
+import clean_pdb
+# ion()
 
 class Thermostab_query:
 
@@ -89,7 +89,7 @@ class Thermostab_query:
                 os.system('cp ' + self.uploaded_fasta + ' ' + self.get_path_in() + '/' + self.fasta_file_name)
                 os.system('dos2unix -c Mac ' + self.path_in + '/' + self.fasta_file_name)
             else: # uploaded pdb but not fasta
-                self.fasta_file_name = self._download_fasta(self.pdbid[:4], self.path_in)
+                self.fasta_file_name = self._download_fasta(self.pdbid[:4], self.path_in) # pdbid[:4] corrects if the chain is appended to the end of the name
         else:
             print 'Downloading fasta file from web'
             self.fasta_file_name = self._download_fasta(self.pdbid, self.path_in)
@@ -170,9 +170,11 @@ class Thermostab_query:
                     else:
                         line += ',' + item
                     # f.write(arg_vec[counter] + line + '\n')
-                f.write('-{}={}\n'.format(arg, line))
+                # f.write('-{}={}\n'.format(arg, line))
+                f.write('-' + arg + '=' + line + '\n')
             else:
-                f.write('-{}={}\n'.format(arg, str(self.args[arg])))
+                # f.write('-{}={}\n'.format(arg, str(self.args[arg])))
+                f.write('-' + arg + '=' + str(self.args[arg]) + '\n')
         f.close()
 
     def find_interacting_residues(self):
@@ -248,9 +250,14 @@ class Thermostab_query:
             pdb_file_single_chain = open(self.path_in + '/' + self.pdb_single_chain, 'a')
             file_to_read = self.path_in + '/' + self.pdb_file_name
 
-        os.system('sh ' + gen_path + 'clean_pdb.sh '
-                  + file_to_read + ' '
-                  + self.path_in + '/' + self.pdb_clean)
+        # print 'CR: command to clean the pdb'
+        # print 'sh ' + gen_path + 'clean_pdb.sh ' + file_to_read + ' ' + self.path_in + '/' + self.pdb_clean
+
+        clean_pdb.clean_pdb(file_to_read, self.path_in + '/' + self.pdb_clean)
+        print 'CR: clean!!!!'
+        # os.system('sh ' + gen_path + 'clean_pdb.sh '
+        #           + file_to_read + ' '
+        #           + self.path_in + '/' + self.pdb_clean)
 
         for line in open (self.path_in + '/' + self.pdb_clean):
             if line[21:22] == self.chain_id and line [16:17] != 'B':

@@ -1,7 +1,7 @@
 from Bio import pairwise2
 from Bio.SubsMat import MatrixInfo as matlist
-from prody import *
-from pylab import *
+# from prody import *
+# from pylab import *
 import urllib,os,re, subprocess, sys
 
 class Align2seq:

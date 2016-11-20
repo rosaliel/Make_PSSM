@@ -1,26 +1,16 @@
-from Bio import pairwise2
-from Bio.SubsMat import MatrixInfo as matlist
-import urllib,os,re, subprocess, sys
-import linecache
-import time
-import sys
+#!/bin/env python
 
-from path_variables import *
-from Get_input_class import *
-from Input_class import *
-from Blast_class import *
-from Handle_msa_class import *
-from Thermostab_query import *
-from Align2seq_class import *
+# from Get_input_class import *
+from Design_class import *
+
+from Handle_PSSMs import *
 from Handle_dssp_class import *
+from Handle_msa_class import *
+from Input_class import *
 from Make_sub_MSA_files import *
 from PSSM_class import *
-from Handle_PSSMs import *
-from Idealize_class import *
-from Refinement_class import *
-from Filterscan_class import *
+from Thermostab_query import *
 from renum_aligned_func import *
-from Design_class import *
 
 # Parsing input
 input = Input()
@@ -29,8 +19,8 @@ blast_args = input.blast_args_f(args)
 
 # Download PDB & fasta, clean and extract sequences
 pose = Thermostab_query(args)
-pose.fetch_pdb()
-pose.make_pdb_single_chain()
+pose.fetch_pdb() # copies the original or downloads the wanted
+pose.make_pdb_single_chain() # creates the clean PDB  & the pdbID_chain#.pdb in "in"
 pose.extract_pdb_full_seq()
 pose.extract_seq_from_pdb_file()
 pdb_seq = pose.get_pdb_seq() # seq of pdb
